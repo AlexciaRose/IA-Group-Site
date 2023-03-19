@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "ConcertOne";
+    src: url('./Fonts/ConcertOne-Regular.ttf') format('truetype');
+}
+
+body{
+    background-image: url('./Images/Toysbg.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.navbar-brand{
+    font-family: 'ConcertOne';
+    font-size: 40px;
+}

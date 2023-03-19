@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "ConcertOne";
+    src: url('../Fonts/ConcertOne-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Comfortaa";
+    src: url('../Fonts/Comfortaa-VariableFont_wght.ttf');
+}
+
+
+
+.navbar-brand{
+    font-family: 'ConcertOne';
+    font-size: 40px;
+}
+
+.navbar{
+    background-color: rgb(92, 152, 204);
+    position: absolute;
+}
+
+.bg-set{
+    position: 0%, 0%, 50%, 50%;
+   
+}
+
+.login{
+    background-image: url(../Images/scribblebg.png);
+    padding: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loginimg{
+    background-image: url(../Images/kidspointing.png);
+    background-repeat: no-repeat;
+    background-size: 550px;
+    background-position: bottom;
+}
+
+section{
+    font-family: 'Comfortaa';
+    font-weight: bolder;
+}
