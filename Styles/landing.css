@@ -133,6 +133,9 @@ h2{
 .ext-info{
     margin-top: 5%;
     margin-bottom: 100px;
+    margin-left: 150px;
+    margin-right: 0px;
+    
 }
 
 .ext-info img{
@@ -146,4 +149,12 @@ h2{
     margin-top: 30px;
     padding-right: 120px;
     margin-bottom: 40px;
+   
+}
+
+.ext{
+    background-image: url('./Images/cutebg.png');
+    background-size: 100%;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
 }

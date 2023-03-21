@@ -38,10 +38,10 @@ if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { $username = 
                 <a class="nav-link" href="home.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="products.php">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link active" aria-current="page" href="#">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -109,7 +109,7 @@ else{?>
               <p>Our toys are made with love and care, using only the highest quality materials to ensure that they last for years of fun and adventure. 
                 Whether you're shopping for a birthday gift or just looking to add some excitement to your child's playtime, ToyBarn has got you covered.</p>
               <?php if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { ?>
-                <a class="btn btn-primary" href="#" role="button">Get Your Toys</a>
+                <a class="btn btn-primary" href="products.php" role="button">Get Your Toys</a>
              <?php } else {?> 
               <a class="btn btn-primary" href="create.php" role="button">Get Your Toys</a>
               <?php
@@ -140,14 +140,14 @@ else{?>
               </div>
           </section>
 
-          <div class="container">
+          <div class="container ext">
           <div class="row ext-info">
             <div class="col mt-5">
               <h2>Our Mission</h2>
               <p>ToyBarn is your one-stop-shop for quality toys delivered right to your doorstep! 
                 At ToyBarn, we believe that playtime should be full of joy and laughter, which is why we are dedicated to providing you with the best toys in the business.</p>
                 <?php if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { ?>
-                <a class="btn btn-primary" href="#" role="button">Get Your Toys</a>
+                <a class="btn btn-primary" href="products.php" role="button">Get Your Toys</a>
              <?php } else {?> 
               <a class="btn btn-primary" href="create.php" role="button">Get Your Toys</a>
               <?php

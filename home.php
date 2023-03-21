@@ -38,7 +38,7 @@ if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { $username = 
                         <a class="nav-link" href="products.php">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="index.php">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -67,7 +67,7 @@ if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { $username = 
             <div class="col text-center">
                 <h1>Bringing <br> Playtime to Your Doorstep</h1>
                 <p>Whether you're looking for educational toys, outdoor toys, board games, or action figures, we have it all!</p>
-                <a class="btn btn-primary" href="#" role="button">Get Your Toys</a>
+                <a class="btn btn-primary1" href="products.php" role="button">Get Your Toys</a>
             </div>
         </div>
     </div>
@@ -85,7 +85,46 @@ if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { $username = 
                 <img style="margin-top:110px; margin-right:100px;" src="./Images/cast.png" alt="">
             </div>
         </div>
+
+        <div class="marvel2 mt-5">
+            <div class="card p-1" style="width: 18rem; background-color: transparent; ">
+              <img src="WebImg/playpack.png" class="card-img-top" alt="..." >
+              <div class="card-body">
+                <p class="card-text" style="font-size:16px; font-weight:bold; color:black;">Gabby's Play Pack</p>
+                <p class="card-text"  style="rgba(88, 69, 177, 1)"><strong>$3,000.00</strong></p>
+                <input type="button" class="btn btn-primary" text-align: center onclick="displayMessage()" value="Order">
+              </div>
+            </div>
+
+            <div class="card p-1" style="width: 18rem; background-color: transparent; ">
+              <img src="WebImg/poolparty.png" class="card-img-top" alt="..." style="height:280px">
+              <div class="card-body">
+              <p class="card-text" style="font-size:16px; font-weight:bold; color:black;">Gabby's Pool Party Playset</p>
+                <p class="card-text" style="rgba(88, 69, 177, 1)"><strong>$3,000.00</strong></p>
+                <input type="button" class="btn btn-primary" text-align: center onclick="displayMessage()" value="Order">
+              </div>
+            </div>
+
+            <div class="card p-1" style="width: 18rem; background-color: transparent; ">
+              <img src="WebImg/gabbag.png" class="card-img-top" alt="..." >
+              <div class="card-body">
+                <p class="card-text" style="font-size:16px; font-weight:bold; color:black;">Gabby’s Bag-o-Accessories</p>
+                <p class="card-text"  style="rgba(88, 69, 177, 1)"><strong>$3,000.00</strong></p>
+                <input type="button" class="btn btn-primary" text-align: center onclick="displayMessage()" value="Order">
+              </div>
+            </div>
+
+          </div>
+
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script>
+function displayMessage()
+{
+alert("We apologize, We are currently out of stock on this item");
+}
+</script>
 </body>
 </html>

@@ -36,7 +36,7 @@ if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { $username = 
                         <a class="nav-link active" aria-current="page" href="#">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="index.php">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>

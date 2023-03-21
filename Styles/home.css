@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: "Roboto-Flex";
-    src: url('./Fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf');
+    src: url('../Fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf');
 }
 
 main{ 
@@ -26,7 +26,7 @@ main{
 body{
     background-image: url('../Images/cloudybackground.png');
     background-repeat:no-repeat;
-    background-size: contain;
+    background-size: 100%;
     background-position:top;
 }
 
@@ -70,15 +70,21 @@ h1{
     font-weight: bold;
 }
 
-.btn-primary{
-    background-color: rgba(241, 70, 104, 1) !important;
+.btn-primary1{
+    background-color: rgba(241, 70, 104, 1);
     border: none;
     width: 206px;
     font-size: 24px;
     font-weight: 600;
     border-radius: 10px;
     margin-right: 18%;
+    color: white;
 }
+
+.btn-primary1:hover{
+    color: white;
+}
+
 
 .brand{
     margin-top: 15%;
@@ -88,3 +94,28 @@ h1{
     background-position: top;
     padding-top: 0%;
 }
+
+.btn-primary{
+    background-color: rgba(19, 114, 202, 0.666)!important;
+    border: none;
+    width: 90px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+  
+  .card-text{
+    color: rgba(88, 69, 177, 1);
+    font-family:'Roboto-Flex';
+  }
+  
+  .card-title{
+    font-weight: bolder;
+  }
+  
+  .marvel2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: left;
+  }
