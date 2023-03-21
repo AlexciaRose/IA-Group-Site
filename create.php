@@ -23,7 +23,7 @@ session_start();
   <!--Navbar (no link)-->
     <nav class="navbar bg-transparent">
         <div class="container-fluid">
-        <a href="index.php"><span class="navbar-brand mb-0 h1" style="text-decoration:none; color:rgba(241, 70, 104, 1)">Toy<span style="color: black;">Barn</span></span></a>
+        <a href="index.php" style="text-decoration:none; "><span class="navbar-brand mb-0 h1" style="color:rgba(241, 70, 104, 1)">Toy<span style="color: black;">Barn</span></span></a>
         </div>
       </nav>
 
@@ -127,7 +127,7 @@ exit();
       <section class="bg-set">
         <div class="container-fluid vh-100">
             <div class="row d-flex vh-100">
-                <div class="col-8 login">
+                <div class="col-md-8 col-12 login">
 
                 <!--HTML Form-->
                     <form style="margin:auto;" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
@@ -186,15 +186,15 @@ exit();
                       </div>
                         
                       <div class="form-group col ms-2">
-                            <input type="submit" class="btn btn-sign mb-2" value="Register">
+                            <input type="submit" class="btn btn-sign mb-2 mt-4" value="Register">
                         </div>
                         
-                      <p style="margin-top: 20%; font-size:15px;" class="text-center">Already have an account? <a style=" color:black; font-weight:bolder;" href="login.php">Sign in</a> </p>
+                      <p style="margin-top: 15%; font-size:15px;" class="text-center">Already have an account? <a style=" color:black; font-weight:bolder;" href="login.php">Sign in</a> </p>
                      
                     </form>
                 </div>
                 
-                <div class="col-4 bg-light loginimg"> </div>
+                <div class="col-4 bg-light loginimg d-none d-md-block d-xl-block d-xxl-block"> </div>
             </div>
         </div>
     </section>

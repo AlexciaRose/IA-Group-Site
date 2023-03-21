@@ -33,6 +33,16 @@ body{
 .navbar-brand{
     font-family: 'ConcertOne';
     font-size: 40px;
+    margin-right:75%;
+}
+
+.navbar-brand1{
+    font-family: 'ConcertOne';
+    font-size: 40px;
+}
+
+@media screen and (max-width : 800px){
+   .navbar-brand {margin-right:0;}
 }
 
 .navbar{

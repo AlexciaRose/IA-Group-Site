@@ -23,14 +23,14 @@ session_start();
   <!--Navbar (no link)-->
     <nav class="navbar bg-transparent">
         <div class="container-fluid">
-          <a href="index.php"><span class="navbar-brand mb-0 h1" style="text-decoration:none; color:rgba(241, 70, 104, 1)">Toy<span style="color: black;">Barn</span></span></a>
+          <a href="index.php" style="text-decoration:none; "><span class="navbar-brand mb-0 h1" style="text-decoration:none; color:rgba(241, 70, 104, 1)">Toy<span style="color: black;">Barn</span></span></a>
         </div>
       </nav>
 
       <section class="vh-100 bg-set"> 
         <div class="container-fluid">
             <div class="row d-flex justify-content-center align-items-center vh-100">
-                <div class="col-8 vh-100 login">
+                <div class="col-md-8 col-12 vh-100 login">
     
 <?php
   //defining variables
@@ -116,7 +116,7 @@ exit();
                     </form>
                 </div>
                 
-                <div class="col-4 bg-light vh-100 loginimg">
+                <div class="col-4 bg-light loginimg d-none d-md-block d-xl-block d-xxl-block">
                     
                     
                 </div>

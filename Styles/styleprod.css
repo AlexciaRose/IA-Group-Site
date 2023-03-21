@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "ConcertOne";
+  src: url('../Fonts/ConcertOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url('../Fonts/Comfortaa-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: "Agency";
+  src: url('../Fonts/AGENCYB.TTF');
+}
+
+@font-face {
+  font-family: "Comfortaa-Bold";
+  src: url('./Fonts/static/Comfortaa-Bold.ttf');
+}
+
+@font-face {
+  font-family: "Roboto-Flex";
+  src: url('../Fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf');
+}
+
+main{ 
+  
+  width: 100%;
+}
+
+body{
+  background-image: url('../WebImg/galaxy.jpg');
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position:top;
+}
+
+.navbar{
+  font-family: 'Comfortaa';
+}
+
+.navbar-brand1{
+  font-family: 'ConcertOne';
+  font-size: 40px;
+}
+
+.nav-item{
+  padding : 0 15px 0 15px !important;
+}
+
+.boxsec{
+    width: 20px;
+    height: 20px;
+    right: 50%;
+    left: 50%;
+    position: relative;
+    z-index: 1;
+   
+    margin: 20px auto;
+    padding: 20px;
+    color: #726E97;
+  }
+#box1 {
+    height: 160px;
+    width: 290px;
+    right: 652px;
+    left: 600px;
+    top: 1280px;
+    padding: 15px;
+    position: absolute;
+  }
+  #box2 {
+    height: 160px;
+    width: 290px;
+    right: 652px;
+    left: 300px;
+    top: 1380px;
+    padding: 15px;
+  
+  }
+
+  #box3 {
+    height: 160px;
+    width: 290px;
+    right: 652px;
+    left: 900px;
+    top: 1380px;
+    padding: 15px;
+  }
+
+  .button-container-div {
+		text-align: center;
+	}
+	.button {
+		position: absolute;
+		top: 50%;
+	}
+
+  .promo{
+    
+    background-size: 100%;
+    color: white;
+    padding-left: 100px;
+    padding-top: 3%;
+    padding-right: 70%;
+  }
+
+  .promo p{
+    font-family: 'Comfortaa';
+    font-size: 24px;
+    
+  }
+
+  .promo h1{
+    font-family: 'Agency';
+    font-size: 100px;
+    white-space: 2px;    
+  }
+
+  .promo span{
+    font-family: 'Roboto-Flex';
+    font-size: 90px;
+    letter-spacing: 0ch;
+    font-weight: 300;
+  }
+
+  .btn-primary1{
+    background-color: rgba(202, 63, 19, 1)!important;
+    border: none;
+    width: 180px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: white;
+}
+
+.prods{
+  background-image: url('../Images/doodlebg.png');
+  background-repeat: repeat-y;
+  background-position: top;
+}
+
+.btn-primary{
+  background-color: rgba(19, 114, 202, 0.666)!important;
+  border: none;
+  width: 90px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.card-text{
+  color: rgba(88, 69, 177, 1);
+}
+
+.card-title{
+  font-weight: bolder;
+}
+
+.marvel{
+  background-image: url('../WebImg/Marvelbg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.marvel2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

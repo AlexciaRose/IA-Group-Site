@@ -28,14 +28,14 @@ if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { $username = 
 
 <nav class="navbar navbar-expand-lg bg-light bg-opacity-50">
         <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1" style="color:rgba(241, 70, 104, 1)">Toy<span style="color: black;">Barn</span></span>
+        <span class="navbar-brand1 mb-0 h1" style="color:rgba(241, 70, 104, 1)">Toy<span style="color: black;">Barn</span></span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav" style="margin-left:100px;">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="home.php">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Products</a>
@@ -65,16 +65,21 @@ if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { $username = 
 else{?>
 
 <nav class="navbar navbar-expand-lg bg-light bg-opacity-50">
-        <div class="container-fluid" id="navbarNav">
-          <span class="navbar-brand mb-0 h1" style="color:rgba(241, 70, 104, 1)">Toy<span style="color: black;">Barn</span></span>
-          <ul class="navbar-nav" style="">
+        <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1" style="color:rgba(241, 70, 104, 1);" >Toy<span style="color: black;">Barn</span></span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link" href="login.php">Sign In</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="create.php">Register</a>
                 </li>
-              </ul>   
+              </ul>  
+            </div> 
         </div>
       </nav>
 
@@ -161,16 +166,13 @@ else{?>
     <div class="container p-4 pb-0">
       <!-- Section: CTA -->
       <section class="">
-        <p class="d-flex justify-content-center align-items-center">
-          <span class="me-3">Register for free</span>
-          <button type="button" class="btn btn-outline-light btn-rounded">
-            Sign up!
-          </button>
-        </p>
+            <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3">Happy Shopping!</span>
+              </p>
       </section>
       <!-- Section: CTA -->
     </div>
-    <!-- Grid container -->
+
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">

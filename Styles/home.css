@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "ConcertOne";
+    src: url('../Fonts/ConcertOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url('../Fonts/Comfortaa-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: "Comfortaa-Bold";
+    src: url('./Fonts/static/Comfortaa-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Flex";
+    src: url('./Fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf');
+}
+
+main{ 
+    
+    width: 100%;
+}
+
+body{
+    background-image: url('../Images/cloudybackground.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position:top;
+}
+
+.navbar{
+    font-family: 'Comfortaa';
+}
+
+.navbar-brand1{
+    font-family: 'ConcertOne';
+    font-size: 40px;
+}
+
+.nav-item{
+    padding : 0 15px 0 15px !important;
+}
+
+h1{
+    font-family: 'ConcertOne';
+    font-weight: bold;
+    font-size: 94px;
+}
+
+
+.horse h1{
+   margin-top: 20%;
+   padding-right: 18%;
+   color: white;
+}
+
+.horse img{
+    margin-top: 14.8%;
+    position: absolute;
+    margin-left: -100px;
+}
+
+.horse p{
+    font-family: 'Comfortaa';
+    padding: 2%;
+    padding-right: 18%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn-primary{
+    background-color: rgba(241, 70, 104, 1) !important;
+    border: none;
+    width: 206px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-right: 18%;
+}
+
+.brand{
+    margin-top: 15%;
+    background-image: url('../Images/doodlebg.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 0%;
+}
