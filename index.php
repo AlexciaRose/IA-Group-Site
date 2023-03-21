@@ -44,7 +44,7 @@ if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { $username = 
                 <a class="nav-link active" aria-current="page" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contact.php">Contact</a>
               </li>
               <ul class="navbar-nav" style="margin-left:500px;">
                 
