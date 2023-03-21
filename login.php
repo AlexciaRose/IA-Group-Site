@@ -34,7 +34,6 @@ session_start();
     
 <?php
   //defining variables
-  unset($_SESSION["username"]);
   $username = "";
   $password = "";
   $usernameErr ="";
@@ -72,6 +71,7 @@ session_start();
   }
   if ($usernameErr == "" && $passwordErr == ""){
     $_SESSION["username"] = $username;
+    setcookie("username", $username, time() + 3600, "/");
     header("Location: index.php");
 exit();
   }

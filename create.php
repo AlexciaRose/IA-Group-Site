@@ -104,6 +104,17 @@ elseif ($password != $password_confirm) {
 
 
   if ($firstNameErr == "" && $lastNameErr == "" && $emailErr == "" && $usernameErr == "" && $passwordErr == "" && $passwordConfirmErr == "" ){
+
+    // Open file for writing (create it if it doesn't exist)
+    $file = fopen("register.txt", "a") or die("Unable to open file!");
+    
+    // Write username and password to file
+    fwrite($file, $firstName . "," . $lastName . "," . $username . "," . $useremail ."," . $password .  "\n");
+    
+    // Close file
+    fclose($file);
+
+    //sets session variable
     $_SESSION["username"] = $username;
     header("Location: index.php");
 exit();
