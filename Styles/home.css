@@ -3,13 +3,137 @@
     src: url('./Fonts/ConcertOne-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: "Comfortaa";
+    src: url('./Fonts/Comfortaa-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: "Comfortaa-Bold";
+    src: url('./Fonts/static/Comfortaa-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Flex";
+    src: url('./Fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf');
+}
+
+main{ 
+    
+    width: 100%;
+}
+
 body{
     background-image: url('./Images/Toysbg.png');
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position:top;
 }
 
 .navbar-brand{
     font-family: 'ConcertOne';
     font-size: 40px;
+}
+
+.navbar{
+    font-family: 'Comfortaa';
+}
+
+.nav-item{
+    padding : 0 15px 0 15px !important;
+}
+
+h1{
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.toyheading{
+    position: relative;
+    left:45%;
+    top: -10px;
+    background-color: rgba(58, 18, 217, 0.96);
+    border-radius: 25px;
+    rotate: -12.5deg;
+}
+
+.toyheading h1{
+    font-size: 96px;
+    color: rgba(241, 70, 104, 1);
+    font-family: 'ConcertOne';
+    font-weight: lighter;
+}
+
+.start-info{
+    margin-top: 10%;
+}
+
+.start-info img{
+    margin-left: -100px;
+}
+
+.start-info p{
+    font-family: 'Roboto-Flex';
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 30px;
+    padding-right: 120px;
+    margin-bottom: 40px;
+}
+
+h2{
+    font-family: 'Comfortaa-Bold';
+    font-size: 40px;
+}
+
+.btn-primary{
+    background-color: rgba(202, 63, 19, 1) !important;
+    border: none;
+    width: 206px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.buy-info{
+    margin-top: 8%;
+    background-color: rgba(159, 87, 215, 0.62);
+    width: 100%;  
+    font-family: 'Roboto-Flex';
+    font-weight: bold;
+    font-size: 48px;  
+    color: white;
+    
+}
+
+.buy-info p{
+    font-size: 24px;
+    font-weight: lighter;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.buy-info h3{
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing:1px;
+}
+
+.ext-info{
+    margin-top: 5%;
+    margin-bottom: 100px;
+}
+
+.ext-info img{
+   margin-left: 100px;
+}
+
+.ext-info p{
+    font-family: 'Roboto-Flex';
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 30px;
+    padding-right: 120px;
+    margin-bottom: 40px;
 }

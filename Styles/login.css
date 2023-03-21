@@ -7,7 +7,14 @@
     src: url('../Fonts/Comfortaa-VariableFont_wght.ttf');
 }
 
-
+html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100%;
+  }  
 
 .navbar-brand{
     font-family: 'ConcertOne';
@@ -26,19 +33,39 @@
 
 .login{
     background-image: url(../Images/scribblebg.png);
-    padding: 10%;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    min-height: 100vh;
 }
 
 .loginimg{
     background-image: url(../Images/kidspointing.png);
     background-repeat: no-repeat;
-    background-size: 550px;
     background-position: bottom;
+    min-height: 100vh;
 }
 
 section{
     font-family: 'Comfortaa';
     font-weight: bolder;
+    height: 100vh;
 }
+
+
+
+form header{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.btn-sign{
+    background-color: rgba(255, 68, 9, 1);
+    color: white;
+    width: 100%;
+}
+
+label{
+    font-size: 20px;
+}
+ 
