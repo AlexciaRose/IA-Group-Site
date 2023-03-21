@@ -22,7 +22,11 @@ session_start();
     <title>ToyBarn</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light bg-opacity-50">
+
+<?php
+if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { $username = $_SESSION["username"];?>
+
+<nav class="navbar navbar-expand-lg bg-light bg-opacity-50">
         <div class="container-fluid">
         <span class="navbar-brand mb-0 h1" style="color:rgba(241, 70, 104, 1)">Toy<span style="color: black;">Barn</span></span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,17 +47,42 @@ session_start();
                 <a class="nav-link" href="#">Contact</a>
               </li>
               <ul class="navbar-nav" style="margin-left:500px;">
+                
+                <span class="navbar-text" style="color:rgba(202, 63, 19, 1); font-weight:bold;">Welcome, <?php echo $username; ?>!</span>
+                
                 <li class="nav-item">
-                  <a class="nav-link" href="login.php">Sign In</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="create.php">Register</a>
+                  <a class="nav-link" href="logout.php">Logout</a>
                 </li>
               </ul>              
             </ul>
           </div>
         </div>
       </nav>
+
+<?php
+}
+
+else{?>
+
+<nav class="navbar navbar-expand-lg bg-light bg-opacity-50">
+        <div class="container-fluid" id="navbarNav">
+          <span class="navbar-brand mb-0 h1" style="color:rgba(241, 70, 104, 1)">Toy<span style="color: black;">Barn</span></span>
+          <ul class="navbar-nav" style="">
+                <li class="nav-item">
+                  <a class="nav-link" href="login.php">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="create.php">Register</a>
+                </li>
+              </ul>   
+        </div>
+      </nav>
+
+<?php
+}?>
+
+
+   
 
       <main>
         <div class="container">
@@ -74,7 +103,13 @@ session_start();
               <h2>Unleash their <span style="color:rgba(88, 69, 177, 1)">imagination!</span></h2>
               <p>Our toys are made with love and care, using only the highest quality materials to ensure that they last for years of fun and adventure. 
                 Whether you're shopping for a birthday gift or just looking to add some excitement to your child's playtime, ToyBarn has got you covered.</p>
-              <a class="btn btn-primary" href="#" role="button">Get Your Toys</a>
+              <?php if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { ?>
+                <a class="btn btn-primary" href="#" role="button">Get Your Toys</a>
+             <?php } else {?> 
+              <a class="btn btn-primary" href="create.php" role="button">Get Your Toys</a>
+              <?php
+              }?>
+                
             </div>
           </div>
         </div>
@@ -106,7 +141,12 @@ session_start();
               <h2>Our Mission</h2>
               <p>ToyBarn is your one-stop-shop for quality toys delivered right to your doorstep! 
                 At ToyBarn, we believe that playtime should be full of joy and laughter, which is why we are dedicated to providing you with the best toys in the business.</p>
-              <a class="btn btn-primary" href="#" role="button">Get Your Toys</a>
+                <?php if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { ?>
+                <a class="btn btn-primary" href="#" role="button">Get Your Toys</a>
+             <?php } else {?> 
+              <a class="btn btn-primary" href="create.php" role="button">Get Your Toys</a>
+              <?php
+              }?>
             </div>
             <div class="col">
             <img src="./Images/girljump.png" class="img-fluid" alt="">

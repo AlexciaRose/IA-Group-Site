@@ -23,7 +23,7 @@ session_start();
   <!--Navbar (no link)-->
     <nav class="navbar bg-transparent">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1" style="color:rgba(241, 70, 104, 1)">Toy<span style="color: black;">Barn</span></span>
+        <a href="index.php"><span class="navbar-brand mb-0 h1" style="text-decoration:none; color:rgba(241, 70, 104, 1)">Toy<span style="color: black;">Barn</span></span></a>
         </div>
       </nav>
 
@@ -119,20 +119,20 @@ exit();
                 <div class="col-8 login">
 
                 <!--HTML Form-->
-                    <form style="margin:auto;" action="index.php" method="POST">
+                    <form style="margin:auto;" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
                       <header style="color:rgba(88, 69, 177, 1); font-size: 40px; font-weight:bold; margin-top:20%;" class="mb-4 text-center" >Create account</header>
 
                       <div class="form-group row">
                         <div class="col ms-2">
                             <label for="firstName" class="form-label mb-0">First Name</label> <br>
-                            <input type="text" class="form-control mb-4" name="firstName" placeholder="First Name" required>
+                            <input type="text" class="form-control" name="firstName" placeholder="First Name" required>
                             <?php if (isset($firstNameErr)) { ?>
                           <span class="error" style="font-size:10px; color:red;"><?php echo $firstNameErr; ?></span>
                         <?php } ?>
                         </div>
                         <div class="col ms-2">
                             <label for="lastName" class="form-label mb-0">Last Name</label> <br>
-                            <input type="text" class="form-control mb-4" name="lastName" placeholder="Last Name" required>
+                            <input type="text" class="form-control" name="lastName" placeholder="Last Name" required>
                             <?php if (isset($lastNameErr)) { ?>
                           <span class="error" style="font-size:10px; color:red;"><?php echo $lastNameErr; ?></span>
                         <?php } ?>
@@ -140,29 +140,29 @@ exit();
                       </div>
      
                       <div class="form-group col ms-2"> 
-                        <label for="useremail" class="form-label mb-0">Email</label> <br>
-                        <input type="email" class="form-control mb-4" name="useremail" placeholder="Email" required>
+                        <label for="useremail" class="form-label mb-0 mt-4">Email</label> <br>
+                        <input type="email" class="form-control" name="useremail" placeholder="Email" required>
                         <?php if (isset($emailErr)) { ?>
                           <span class="error" style="font-size:10px; color:red;"><?php echo $emailErr; ?></span>
                         <?php } ?>
                       </div>
                       <div class="form-group col ms-2">
-                        <label for="username" class="form-label mb-0">Username</label> <br>
-                        <input type="text" class="form-control mb-4" name="username" placeholder="Username" required>
+                        <label for="username" class="form-label mb-0 mt-4">Username</label> <br>
+                        <input type="text" class="form-control" name="username" placeholder="Username" required>
                         <?php if (isset($usernameErr)) { ?>
                           <span class="error" style="font-size:10px; color:red;"><?php echo $usernameErr; ?></span>
                         <?php } ?>
                       </div>
                       <div class="form-group col ms-2">
-                        <label for="userpassword" class="form-label mb-0">Password</label> <br>
-                        <input type="password" class="form-control mb-4" name="userpassword" placeholder="Password" required>
+                        <label for="userpassword" class="form-label mb-0 mt-4">Password</label> <br>
+                        <input type="password" class="form-control" name="userpassword" placeholder="Password" required>
                         <?php if (isset($passwordErr)) { ?>
                           <span class="error" style="font-size:10px; color:red;"><?php echo $passwordErr; ?></span>
                         <?php } ?>
                       </div>
                       <div class="form-group col ms-2">
-                        <label for="password_confirm" class="form-label mb-0">Confirm Password</label> <br>
-                        <input type="password" class="form-control mb-4" name="password_confirm" placeholder="Confirm Password" required>
+                        <label for="password_confirm" class="form-label mb-0 mt-4">Confirm Password</label> <br>
+                        <input type="password" class="form-control" name="password_confirm" placeholder="Confirm Password" required>
                         <?php if (isset($passwordConfirmErr)) { ?>
                           <span class="error" style="font-size:10px; color:red;"><?php echo $passwordConfirmErr; ?></span>
                         <?php } ?>

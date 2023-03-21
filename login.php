@@ -23,7 +23,7 @@ session_start();
   <!--Navbar (no link)-->
     <nav class="navbar bg-transparent">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1" style="color:rgba(241, 70, 104, 1)">Toy<span style="color: black;">Barn</span></span>
+          <a href="index.php"><span class="navbar-brand mb-0 h1" style="text-decoration:none; color:rgba(241, 70, 104, 1)">Toy<span style="color: black;">Barn</span></span></a>
         </div>
       </nav>
 
@@ -34,6 +34,7 @@ session_start();
     
 <?php
   //defining variables
+  unset($_SESSION["username"]);
   $username = "";
   $password = "";
   $usernameErr ="";
