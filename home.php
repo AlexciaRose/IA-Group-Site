@@ -72,7 +72,7 @@ if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { $username = 
         </div>
     </div>
 
-    <section class="brand text-center">
+    <section class="brand text-center mb-5">
         <img class="" src="./Images/brand.png" alt="">
         <div class="row mt-5">
             <div class="col">
@@ -117,6 +117,36 @@ if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { $username = 
           </div>
 
     </section>
+
+
+    <section class= "container reviews_bg p-5 text-center">
+        <div class="reviews_img"><img src="./Images/collage.png" alt=""></div>
+    </section>
+
+    <section class="mt-5">
+  <!-- Footer -->
+  <footer class="text-center text-white mt-5" style="background-color: rgba(159, 87, 215, 0.62)">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: CTA -->
+      <section class="">
+            <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3">Happy Shopping!</span>
+              </p>
+      </section>
+      <!-- Section: CTA -->
+    </div>
+
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="">ToyBarn</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
