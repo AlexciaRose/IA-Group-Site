@@ -15,7 +15,7 @@ session_start();
   ?>
 <style>
   <?php
-    include 'Styles/home.css'
+    include 'Styles/landing.css'
   ?>
 </style>
 
