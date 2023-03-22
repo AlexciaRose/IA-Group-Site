@@ -24,7 +24,8 @@ session_start();
 <body>
 
 <?php
-if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { $username = $_SESSION["username"];?>
+if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { $username = $_SESSION["username"]; 
+setcookie("username", $username, time() + 3600, "/");?>
 
 <nav class="navbar navbar-expand-lg bg-light bg-opacity-50">
         <div class="container-fluid">

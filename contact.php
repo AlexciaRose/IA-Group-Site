@@ -103,15 +103,15 @@ if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { $username = 
   }
 
   if (empty($_POST["message"])) {
-    $messageErr  = "Last Name is required";
+    $messageErr  = "Message required";
   } 
   else {
-    $messageErr  = test_input($_POST["message"]);
+    $message  = test_input($_POST["message"]);
   }
 
 
 
-  if ($firstNameErr == "" && $lastNameErr == "" && $emailErr == "" ){
+  if ($firstNameErr == "" && $lastNameErr == "" && $emailErr == "" && $messageErr == "" ){
 
     // Open file for writing (create it if it doesn't exist)
     $file = fopen("contact.txt", "a") or die("Unable to open file!");
@@ -166,9 +166,7 @@ exit();
 
                       <div class="form-group col ms-2"> 
                         <label for="message" class="form-label mb-0 mt-4">Message</label> <br>
-                        <textarea name="message" class="formcontrol" id="message" cols="50" rows="5" placeholder="Type Your Message" required>
-
-                        </textarea> 
+                        <textarea name="message" class="formcontrol" id="message" cols="50" rows="5" placeholder="Type Your Message" required></textarea> 
                         <?php if (isset($messageErr)) { ?>
                           <span class="error" style="font-size:10px; color:red;"><?php echo $messageErr; ?></span>
                         <?php } ?>

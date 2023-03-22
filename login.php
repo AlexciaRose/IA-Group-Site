@@ -71,7 +71,6 @@ session_start();
   }
   if ($usernameErr == "" && $passwordErr == ""){
     $_SESSION["username"] = $username;
-    setcookie("username", $username, time() + 3600, "/");
     header("Location: index.php");
 exit();
   }
