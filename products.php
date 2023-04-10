@@ -70,9 +70,19 @@ if(isset($_SESSION["username"]) && !empty($_SESSION["username"])) { $username = 
         </div>
         
       
+            <form action="search.php" method="get">
+              <label for="search">Search:</label>
+              <input type="text" id="search" name="q" placeholder="Product name"> <br>
+              <label for="price-min">Min Price:</label>
+              <input type="number" id="price-min" name="price_min" placeholder="0" class="col-1">
+              <label for="price-max">Max Price:</label>
+              <input type="number" id="price-max" name="price_max" placeholder="10000" class="col-1">
+              <button type="submit">Search</button>
+            </form>
+
+
         <div class="container prods mt-5">
         <p style="font-size: 40px; font-family:'Roboto-Flex'; font-weight:400;"><strong>Action Figures</strong></p>
-      
       
       
       <div class="row row-cols-1 row-cols-md-4 g-4">

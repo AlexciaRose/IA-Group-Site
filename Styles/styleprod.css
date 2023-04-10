@@ -168,3 +168,31 @@ body{
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+#search-input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+#search-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #3e8e41;
+}
