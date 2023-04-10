@@ -105,18 +105,32 @@ elseif ($password != $password_confirm) {
 
   if ($firstNameErr == "" && $lastNameErr == "" && $emailErr == "" && $usernameErr == "" && $passwordErr == "" && $passwordConfirmErr == "" ){
 
-    // Open file for writing (create it if it doesn't exist)
-    $file = fopen("register.txt", "a") or die("Unable to open file!");
+    require 'connection.php';
+    $conn = Connect();
+    $firstName = $conn->real_escape_string($_POST['first_name']);
+    $lastName = $conn->real_escape_string($_POST['last_name']);
+    $username = $conn->real_escape_string($_POST['u_name']);
+    $useremail = $conn->real_escape_string($_POST['u_email']);
+    $password = $conn->real_escape_string($_POST['userpassword']);
+   
+    $query = "INSERT into tbl_users (first_name,last_name,u_name,u_email,userpassword) VALUES('" . $firstName . "','" . $lastName . "','" . $username . "','" . $useremail . "','" . $password . "')";
+                                                   
+    $success = $conn->query($query);          
     
-    // Write username and password to file
-    fwrite($file, $firstName . "," . $lastName . "," . $username . "," . $useremail ."," . $password .  "\n");
+    if (!$success){
+        die("Couldn't enter data: ".$conn->error);
+    }
     
-    // Close file
-    fclose($file);
-
+    echo "Thank You for Contacting Us"; 
+    
+    
     //sets session variable
     $_SESSION["username"] = $username;
     header("Location: index.php");
+
+    $conn->close();
+    
+
 exit();
   }
 
